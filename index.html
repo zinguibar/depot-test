@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jeu de dé : #2-Hassani</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+      <div class="container">
+          <header class="main-header">
+            <p><img src= "images/image.jpg" alt="" /></p>
+          </header>
+
+          <section class="hero">
+            <h1>Jeu de dé à 6 faces : tirage au hasard</h1>
+            <p>Le jeu génère un nombre aléatoire entre 1 et 6 et il faut le deviner.</p>
+          </section>
+        
+          <section class="main-page">
+            <div class="button-position">
+                <button class="button" onclick="lancerDe()">Lancer du dé</button>
+                <p class="msg" id="message"></p>
+            </div> 
+
+            <p id="image"><img src="images/images3.png" /></p>
+           
+            <form id="myForm">
+                <label>Quel est le nombre mystère ?</label>
+                <input class="saisi-nombre" type="nombre" id="nombre" min="1" max="6" size="1">
+                <input class="btn" type="button" id="myBtn" value="Valider" onclick="monNombre();" />
+            </form>
+          </section>          
+
+       </div>   
+    <script src="index.js"></script>
+  </body>
+</html>
